@@ -1,0 +1,12 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-grow: 1;
+}
+.left-bar {
+  width: 10vw;
+  background-color: grey;
+}
+.map-container {
+  flex-grow: 1;
+}
