@@ -6,8 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "preinstall": "npx npm-force-resolutions"
   },
+  "resolutions": {
+    "glob-parent": "^5.1.2"},
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
