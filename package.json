@@ -10,7 +10,7 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "resolutions": {
-    "glob-parent": "^5.1.2",
+    "glob-parent": "^5.1.2"},
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
