@@ -42,7 +42,7 @@ export class ForecastComponent implements OnInit {
       'Saturday',
     ];
     let days = cityWeather.daily;
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 8; i++) {
       const day = days[i];
       let date = new Date(day.dt * 1000);
       forecasts.push({
