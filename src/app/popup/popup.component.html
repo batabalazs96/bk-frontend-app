@@ -1,0 +1,16 @@
+<div id="popup" class="ol-popup">
+  <div id="popup-content" *ngIf="popupContentData">
+    <img src="{{ popupContentData.currentIcon }}" alt="" srcset="" />
+    <div class="celsious">{{ popupContentData.currentCelsious }}°</div>
+    <div>
+      <div class="cityName">{{ popupContentData.cityName }}</div>
+      <div class="main">{{ popupContentData.currentMain }}</div>
+    </div>
+  </div>
+  <span id="popup-closer" class="ol-popup-closer"></span>
+</div>
+<app-geocoding
+  [coordinate]="coordinate"
+  *ngIf="coordinate"
+  (clickedCityWeather)="fillPopupContentData($event)"
+></app-geocoding>
