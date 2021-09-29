@@ -1,9 +1,0 @@
-<main>
-  <app-forecast *ngIf="cityWeather" [cityWeather]="cityWeather"></app-forecast>
-  <div id="ol-map" class="map-container"></div>
-  <app-popup
-    [map]="map"
-    [overlay]="overlay"
-    (cityWeather)="getCityWeather($event)"
-  ></app-popup>
-</main>
