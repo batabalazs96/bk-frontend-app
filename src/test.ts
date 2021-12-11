@@ -13,12 +13,12 @@ declare const require: {
     <T>(id: string): T;
   };
 };
-
+//comment, hogy működik-e a commentbúl branch
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting(),
-  { teardown: { destroyAfterEach: true }},
+  { teardown: { destroyAfterEach: true } },
 );
 
 // Then we find all the tests.
